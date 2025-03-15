@@ -1,6 +1,7 @@
 """
 Student information for this assignment:
 
+Replace <FULL NAME> with your name.
 On my/our honor, Ananya Loke and Vijay Avala, this
 programming assignment is my own work and I have not provided this code to
 any other student.
@@ -184,14 +185,13 @@ class WordFamily:
 
         if len(self.words) > len(other.words):
             return True
-        elif len(self.words) < len(other.words):
+        if len(self.words) < len(other.words):
             return False
-        elif self.difficulty > other.difficulty:
+        if self.difficulty > other.difficulty:
             return True
-        elif self.difficulty < other.difficulty:
+        if self.difficulty < other.difficulty:
             return False
-        else:
-            return self.feedback_colors < other.feedback_colors
+        return self.feedback_colors < other.feedback_colors
 
 
 
